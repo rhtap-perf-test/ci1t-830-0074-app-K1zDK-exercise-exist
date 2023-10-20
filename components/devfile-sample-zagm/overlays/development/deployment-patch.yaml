@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-zagm
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0074-tenant/ci1t-830-0074-app/devfile-sample-zagm@sha256:a11f104066ed83700f2bfe3646c6c239041582343fd8c6823774c1c8fb138516
+        name: my-nodejs
+        resources: {}
+status: {}
